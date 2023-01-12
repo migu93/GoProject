@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{.Title}}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            {{range .NavLinks}}
+            <li><a href="{{.URL}}">{{.Name}}</a></li>
+            {{end}}
+        </ul>
+    </nav>
+    <h1>{{.Title}}</h1>
+    <p>{{.Body}}</p>
+    <p>You are currently on the {{.CurrentPage}} page</p>
+</body>
+</html>
